@@ -1,0 +1,94 @@
+@import "tailwindcss";
+
+@theme {
+
+  --color-primary: #d4af37;
+  --color-primary-50: #faf9ec;
+  --color-primary-100: #f4f0cd;
+  --color-primary-200: #ebdf9d;
+  --color-primary-300: #dfc865;
+  --color-primary-400: #d4af37;
+  --color-primary-500: #c59b2d;
+  --color-primary-600: #aa7a24;
+  --color-primary-700: #885920;
+  --color-primary-800: #724921;
+  --color-primary-900: #623e21;
+  --color-primary-950: #382010;
+
+  --font-noto: "Noto Serif Display", serif;
+  --font-source: "Source Serif 4", serif;
+}
+
+@layer base {
+  * {
+    @apply box-border;
+  }
+
+  body {
+    @apply text-lg text-neutral-900 font-normal bg-[#f2ebe4] size-full overflow-x-hidden overflow-y-auto leading-normal font-source;
+  }
+
+  :is(h1, h2, h3, h4, h5, h6) {
+    @apply leading-[1.2] font-noto font-extrabold text-black
+  }
+
+  img {
+    @apply w-full h-auto align-middle;
+  }
+
+  label {
+    @apply block text-base font-medium mb-1;
+  }
+
+  :is(button, input, select, textarea, a) {
+    @apply outline-none;
+  }
+
+  :is(input:not([type="checkbox"]), select, textarea) {
+    @apply border border-neutral-500 rounded-none text-base outline-none w-full resize-none px-3 py-2;
+  }
+}
+
+@layer utilities {
+  .container {
+    @apply relative z-[1] w-full max-w-full mx-auto px-3 sm:max-w-[576px] md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1140px] 2xl:max-w-[1280px];
+  }
+}
+
+@layer components {
+  .row {
+    @apply -mx-3 flex flex-wrap *:relative *:z-[1] *:px-3 *:grow-0 *:shrink-0 *:basis-auto *:w-full *:max-w-full;
+  }
+
+  .subtitle {
+    @apply text-2xl font-semibold
+  }
+
+  .form_sm :is(input:not([type="checkbox"]), select, textarea) {
+    @apply text-sm px-2.5 py-3
+  }
+
+  .form_white :is(input:not([type="checkbox"]), select, textarea) {
+    @apply bg-white text-black
+  }
+
+  .form_primary :is(input:not([type="checkbox"]), select, textarea) {
+    @apply bg-primary-200/20 text-black border-primary-800/50
+  }
+
+  h2.title {
+    @apply text-[44px]
+  }
+
+  h3.title {
+    @apply text-4xl;
+  }
+
+  h4.title {
+    @apply text-[30px];
+  }
+
+  .text-shdow {
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.2);
+  }
+}

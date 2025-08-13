@@ -1,0 +1,58 @@
+import React from "react";
+import {
+  banners_body_bg,
+  banners_header_bg,
+  banners_texture,
+  frames_3,
+} from "../../assets";
+import { processItems } from "../../constants";
+import Subtitle from "../ui/Subtitle";
+
+const Process = () => {
+  return (
+    <section
+      className="relative py-20 bg-cover bg-center bg-no-repeat"
+      style={{ backgroundImage: `url(${banners_texture})` }}
+    >
+      <div className="container">
+        <div className="row">
+          <div>
+            <div className="container">
+              <div className="row justify-between gap-y-10">
+                <div className="lg:w-6/12">
+                  <div className="lg:pr-5 space-y-3">
+                    <Subtitle>Our Process</Subtitle>
+                    <h2 className="title">How We Work</h2>
+                    <p>
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Labore atque ipsam, minus laborum culpa nesciunt accusamus
+                      optio fuga similique. Expedita!
+                    </p>
+                  </div>
+                </div>
+                {processItems.map((item, idx) => (
+                  <div className="lg:w-3/12">
+                    <div
+                      key={idx}
+                      className="flex flex-col gap-3 p-10 relative bg-center bg-no-repeat"
+                      style={{
+                        backgroundImage: `url(${frames_3})`,
+                        backgroundSize: "100% 100%",
+                      }}
+                    >
+                      <img src="" className="size-10" alt="" />
+                      <h4 className="text-2xl font-bold">{item.title}</h4>
+                      <p className="text-base">{item.text}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Process;
