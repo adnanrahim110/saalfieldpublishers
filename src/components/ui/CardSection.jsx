@@ -20,11 +20,11 @@ const CardSection = ({ title, text, img, subtitle, white = false }) => {
       <div className="container">
         <div className="row items-center justify-between">
           <div className="lg:w-5/12">
-            <Image src={home_sec1} frame={frames_2} />
+            <Image src={img || home_sec1} frame={frames_2} />
           </div>
           <div className="lg:w-[54%]">
             <div className="flex flex-col gap-3">
-              <Subtitle>{subtitle}</Subtitle>
+              {subtitle && <Subtitle>{subtitle}</Subtitle>}
               <h2 className="title text-black">{title}</h2>
               <p className="text-neutral-900">{text}</p>
             </div>

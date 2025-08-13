@@ -1,23 +1,15 @@
 import { motion } from "motion/react";
-import React, { useState } from "react";
+import { useState } from "react";
 import { FaAngleDown } from "react-icons/fa";
-import {
-  banners_faq_bg,
-  banners_sec_bg2,
-  bstack,
-  el_ink,
-  faqs,
-  frames_2,
-} from "../../assets";
+import { banners_faq_bg, banners_sec_bg2, bstack, el_ink } from "../../assets";
 import { faqsQuestions } from "../../constants";
 import { fadeInUp } from "../../utils/animations";
-import Image from "../ui/Image";
 
 const Faq = ({ qouestionare = faqsQuestions }) => {
   const [openId, setOpenId] = useState(0);
   return (
     <section
-      className="py-20 relative bg-cover bg-top bg-no-repeat"
+      className="py-20 relative bg-cover bg-top bg-no-repeat shadow-[inset_0_0_40px_50px] shadow-white"
       style={{
         backgroundImage: `linear-gradient(to bottom, rgba(255,255,255, 0.55), rgba(255,255,255, 0.55)), url(${banners_sec_bg2})`,
       }}

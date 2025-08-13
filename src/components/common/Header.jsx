@@ -32,16 +32,7 @@ const Header = () => {
   };
 
   useEffect(() => {
-    let openKey = null;
-    for (let i = 0; i < navigation.length; i++) {
-      const item = navigation[i];
-      const key = keyOf(item, i);
-      if (hasActiveChild(item)) {
-        openKey = key;
-        break;
-      }
-    }
-    setIsActiveDropdown(openKey);
+    setIsActiveDropdown(null);
   }, [path]);
 
   useEffect(() => {
@@ -89,7 +80,7 @@ const Header = () => {
                 <img
                   src={logo}
                   alt="Saalfield Publishers"
-                  className="lg:max-w-[100px]"
+                  className="lg:max-w-[100px] scale-125 translate-y-2"
                 />
               </Link>
             </div>

@@ -11,10 +11,20 @@ import Button from "./Button";
 const Hero = ({ title, subtitle, text, withoutSignup = false }) => {
   return (
     <div
-      className="relative pt-48 pb-16 bg-no-repeat bg-center bg-cover"
+      className={cn(
+        "relative pt-48 bg-no-repeat bg-center bg-cover",
+        withoutSignup ? "pb-24" : "pb-16"
+      )}
       style={{ backgroundImage: `url(${banners_hero_bg})` }}
     >
-      <div className="absolute inset-0 bg-gradient-to-r from-primary-900 via-black/40 to-black/20 mix-blend-multiply" />
+      <div
+        className={cn(
+          "absolute inset-0 mix-blend-multiply",
+          withoutSignup
+            ? "bg-gradient-to-t from-black/20 from-0% via-40% to-90% via-black/40 to-black/10"
+            : "bg-gradient-to-r from-primary-900 via-black/40 to-black/20"
+        )}
+      />
       <div className="container">
         <div
           className={cn(
@@ -29,7 +39,10 @@ const Hero = ({ title, subtitle, text, withoutSignup = false }) => {
                 whileInView="visible"
                 viewport={{ once: true }}
                 variants={fadeInUp()}
-                className="subtitle text-primary"
+                className={cn(
+                  "text-[26px]",
+                  withoutSignup ? "text-primary-300 font-black" : "text-primary"
+                )}
               >
                 {subtitle}
               </motion.h4>
@@ -56,7 +69,10 @@ const Hero = ({ title, subtitle, text, withoutSignup = false }) => {
                 whileInView="visible"
                 viewport={{ once: true }}
                 variants={fadeInUp()}
-                className="flex flex-wrap gap-5"
+                className={cn(
+                  "flex flex-wrap gap-5",
+                  withoutSignup ? "justify-center" : "justify-start"
+                )}
               >
                 <Button icon={IoRocketSharp}>Start Project</Button>
                 <Button dark icon={RiChatAiFill}>
@@ -65,9 +81,11 @@ const Hero = ({ title, subtitle, text, withoutSignup = false }) => {
               </motion.div>
             </div>
           </div>
-          <div className="lg:w-[45%]">
-            <Signup />
-          </div>
+          {!withoutSignup && (
+            <div className="lg:w-[45%]">
+              <Signup />
+            </div>
+          )}
         </div>
       </div>
     </div>

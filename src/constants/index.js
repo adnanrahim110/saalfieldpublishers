@@ -9,49 +9,49 @@ export const navigation = [
     dropdown: [
       {
         title: "Ghostwriting",
-        url: "/"
+        url: "/ghostwriting",
       },
       {
         title: "Book Editing",
-        url: "/"
+        url: "/book-editing"
       },
       {
         title: "Book Formatting",
-        url: "/"
+        url: "/book-formatting"
       },
       {
         title: "Professional Proofreading",
-        url: "/"
+        url: "/professional-proofreading"
       },
       {
         title: "Author Website",
-        url: "/"
+        url: "/author-website"
       },
       {
         title: "Book Cover Design",
-        url: "/"
+        url: "/book-cover-design"
       },
       {
         title: "Book Illustration",
-        url: "/"
+        url: "/book-illustration"
       },
       {
         title: "Book Publishing",
-        url: "/"
+        url: "/book-publishing"
       },
     ]
   },
   {
     title: 'About Us',
-    url: "/"
+    url: '/about-us',
   },
   {
     title: 'Testimonials',
-    url: "/"
+    url: '/testimonials',
   },
   {
     title: 'Contact Us',
-    url: "/"
+    url: '/contact-us',
   },
 ]
 
