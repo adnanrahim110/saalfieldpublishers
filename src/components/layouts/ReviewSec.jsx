@@ -5,6 +5,7 @@ import "swiper/css/effect-cards";
 import { EffectCreative, Keyboard, Mousewheel } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { banners_reviews_sec } from "../../assets";
+
 const AV1 =
   "https://img.freepik.com/free-photo/portrait-young-woman-vintage_23-2149645556.jpg";
 const AV2 =
@@ -86,9 +87,6 @@ const TicketCard = ({ quote, name, role, avatar }) => (
           <p className="font-serif text-xl text-black/90 italic">{name}</p>
           <p className="text-xs text-black/60">{role}</p>
         </div>
-        <div className="rounded-full bg-red-900/90 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-white shadow">
-          Verified
-        </div>
       </div>
       <blockquote className="mt-4 border-l-4 border-black/20 pl-4 text-[15px] leading-relaxed text-black/80">
         {quote}
@@ -126,11 +124,13 @@ const ReviewSec = () => {
             flip through.
           </p>
         </div>
+
         <div className="mt-8 mb-6 mx-auto flex w-full max-w-sm items-center justify-center">
           <div className="rev-progress h-1 w-full overflow-hidden rounded bg-black/10">
             <div className="rev-progress-bar h-full w-0 bg-red-900 transition-[width] duration-300" />
           </div>
         </div>
+
         <div className="mx-auto max-w-5xl">
           <Swiper
             modules={[EffectCreative, Mousewheel, Keyboard]}
@@ -138,6 +138,14 @@ const ReviewSec = () => {
             centeredSlides
             loop
             initialSlide={3}
+            breakpoints={{
+              0: { slidesPerView: 1, spaceBetween: 12 },
+              480: { slidesPerView: 1.1, spaceBetween: 14 },
+              640: { slidesPerView: 1.25, spaceBetween: 16 },
+              768: { slidesPerView: 1.45, spaceBetween: 18 },
+              1024: { slidesPerView: 1.6, spaceBetween: 20 },
+              1280: { slidesPerView: 1.75, spaceBetween: 22 },
+            }}
             slidesPerView={1.753}
             spaceBetween={0}
             keyboard={{ enabled: true }}

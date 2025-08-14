@@ -16,9 +16,13 @@ const CardSection = ({ title, text, img, subtitle, white = false }) => {
       className="relative py-20 bg-center bg-cover bg-no-repeat"
       style={{ backgroundImage: `url(${banners_texture})` }}
     >
-      <img src={el_ink} className="absolute -top-14 -right-14 w-96" alt="" />
+      <img
+        src={el_ink}
+        className="absolute -bottom-36 max-lg:rotate-180 lg:-top-14 -right-14 w-96"
+        alt=""
+      />
       <div className="container">
-        <div className="row items-center justify-between">
+        <div className="row gap-y-10 items-center justify-between">
           <div className="lg:w-5/12">
             <Image src={img || home_sec1} frame={frames_2} />
           </div>

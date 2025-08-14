@@ -34,7 +34,7 @@ const Process = () => {
                   <div className="lg:w-3/12">
                     <div
                       key={idx}
-                      className="flex flex-col gap-3 p-10 relative bg-center bg-no-repeat"
+                      className="flex flex-col gap-5 lg:gap-3 p-14 lg:p-10 relative bg-center bg-no-repeat"
                       style={{
                         backgroundImage: `url(${frames_3})`,
                         backgroundSize: "100% 100%",

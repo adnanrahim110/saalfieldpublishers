@@ -25,7 +25,7 @@
   }
 
   body {
-    @apply text-lg text-neutral-900 font-normal bg-white size-full overflow-x-hidden overflow-y-auto leading-normal font-source;
+    @apply text-lg text-neutral-900 font-normal bg-white size-full overflow-x-hidden leading-normal font-source;
   }
 
   :is(h1, h2, h3, h4, h5, h6) {
@@ -65,7 +65,7 @@
   }
 
   .form_sm :is(input:not([type="checkbox"]), select, textarea) {
-    @apply text-sm px-2.5 py-3
+    @apply text-sm px-2.5 py-2 lg:py-3
   }
 
   .form_white :is(input:not([type="checkbox"]), select, textarea) {
@@ -77,7 +77,7 @@
   }
 
   h2.title {
-    @apply text-[44px]
+    @apply text-[34px] lg:text-[44px]
   }
 
   h3.title {
@@ -85,7 +85,7 @@
   }
 
   h4.title {
-    @apply text-[30px];
+    @apply text-2xl lg:text-[30px];
   }
 
   .text-shdow {

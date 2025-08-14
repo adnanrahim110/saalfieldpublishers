@@ -22,13 +22,13 @@ const Hero = ({ title, subtitle, text, withoutSignup = false }) => {
           "absolute inset-0 mix-blend-multiply",
           withoutSignup
             ? "bg-gradient-to-t from-black/20 from-0% via-40% to-90% via-black/40 to-black/10"
-            : "bg-gradient-to-r from-primary-900 via-black/40 to-black/20"
+            : "bg-gradient-to-r from-primary-900 via-black/40 to-black/40 lg:to-black/20"
         )}
       />
       <div className="container">
         <div
           className={cn(
-            "row items-center",
+            "row items-center gap-y-20",
             withoutSignup ? "justify-center text-center" : "justify-between"
           )}
         >
@@ -40,7 +40,7 @@ const Hero = ({ title, subtitle, text, withoutSignup = false }) => {
                 viewport={{ once: true }}
                 variants={fadeInUp()}
                 className={cn(
-                  "text-[26px]",
+                  "text-xl md:text-[26px]",
                   withoutSignup ? "text-primary-300 font-black" : "text-primary"
                 )}
               >
@@ -51,7 +51,7 @@ const Hero = ({ title, subtitle, text, withoutSignup = false }) => {
                 whileInView="visible"
                 viewport={{ once: true }}
                 variants={fadeInUp({ delay: 0.2 })}
-                className="text-5xl text-white"
+                className="text-[34px] lg:text-5xl text-white"
               >
                 {title}
               </motion.h1>

@@ -14,20 +14,20 @@ const Faq = ({ qouestionare = faqsQuestions }) => {
         backgroundImage: `linear-gradient(to bottom, rgba(255,255,255, 0.55), rgba(255,255,255, 0.55)), url(${banners_sec_bg2})`,
       }}
     >
-      <div className="container">
+      <div className="container max-xl:px-0!">
         <div className="row items-center justify-between">
           <div className="lg:w-[41%]">
-            <img src={bstack} alt="" className="scale-110" />
+            <img src={bstack} alt="" className="lg:scale-110" />
           </div>
           <div className="lg:w-[58%]">
             <div
-              className="relative bg-no-repeat bg-center py-20 px-24"
+              className="relative bg-no-repeat bg-center py-16 px-12 lg:py-20 lg:px-24"
               style={{
                 backgroundImage: `url(${banners_faq_bg})`,
                 backgroundSize: "100% 100%",
               }}
             >
-              <h4 className="title mb-5 text-shdow">
+              <h4 className="title max-lg:text-xl max-lg:text-center mb-3 lg:mb-5 text-shdow">
                 Frequently Asked Questions
               </h4>
               <ul className="space-y-0.5 relative">
@@ -37,13 +37,13 @@ const Faq = ({ qouestionare = faqsQuestions }) => {
                     <li key={idx} className="overflow-hidden group">
                       <button
                         onClick={() => setOpenId(idx)}
-                        className={`w-full transition-all duration-300 py-3 px-2.5 cursor-pointer flex items-center justify-between border ${
+                        className={`w-full transition-all duration-300 py-2 lg:py-3 px-2.5 cursor-pointer flex items-center justify-between border ${
                           openId === idx
                             ? "bg-primary border-primary text-white"
                             : "bg-primary-50 text-primary-600 border-primary-50"
                         } ${openId !== idx ? "" : ""}`}
                       >
-                        <span className="text-base font-roundkey text-left">
+                        <span className="text-sm lg:text-base font-roundkey text-left">
                           {faq.title}
                         </span>
                         <span>
@@ -67,7 +67,7 @@ const Faq = ({ qouestionare = faqsQuestions }) => {
                             className="absolute -bottom-6 opacity-50 -left-5 w-40 rotate-180 z-0"
                             alt=""
                           />
-                          <div className="bg-white/25 border border-t-0 border-white/50 backdrop-blur-[2px] text-black py-4 px-3 relative z-[1] ">
+                          <div className="bg-white/25 border border-t-0 border-white/50 backdrop-blur-[2px] text-black py-3 lg:py-4 px-3 relative z-[1] ">
                             <motion.div
                               initial="hidden"
                               whileInView="visible"
@@ -75,7 +75,7 @@ const Faq = ({ qouestionare = faqsQuestions }) => {
                               variants={fadeInUp()}
                               className="flex flex-col"
                             >
-                              <div className="relative text-sm mb-2 w-full z-[2]">
+                              <div className="relative text-xs lg:text-sm mb-2 w-full z-[2]">
                                 {faq.ans}
                               </div>
                             </motion.div>

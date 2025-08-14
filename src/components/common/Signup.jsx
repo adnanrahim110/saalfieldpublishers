@@ -5,13 +5,13 @@ import Button from "../ui/Button";
 
 const Signup = () => {
   return (
-    <div className="relative p-5">
+    <div className="relative lg:p-5">
       <div
         className="absolute inset-0 bg-no-repeat bg-cover bg-top"
         style={{ backgroundImage: `url(${banners_hero_signup})` }}
       />
-      <div className="relative flex flex-col gap-5 pt-[74px] pr-8 pl-10">
-        <h3 className="text-4xl text-center text-primary-900">
+      <div className="relative flex flex-col gap-3 lg:gap-5 max-lg:pb-20 pt-[74px] pr-8 pl-10">
+        <h3 className="text-3xl lg:text-4xl text-center text-primary-900">
           Let's get started
         </h3>
         <form className="form_sm form_primary">
@@ -39,6 +39,7 @@ const Signup = () => {
                   name="message"
                   rows={5}
                   placeholder="Write your message here"
+                  className="max-lg:max-h-20"
                 />
               </div>
               <div className="w-full lg:px-6 text-center">

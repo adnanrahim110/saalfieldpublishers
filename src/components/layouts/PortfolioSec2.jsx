@@ -87,9 +87,9 @@ const PortfolioSec2 = () => {
                 Our Portfolio
               </Subtitle>
 
-              <div className="mx-auto flex w-full max-w-3xl items-center gap-4">
+              <div className="mx-auto flex w-full lg:max-w-3xl items-center gap-4">
                 <div className="h-px flex-1 bg-gradient-to-r from-transparent via-black/30 to-transparent" />
-                <h2 className="title text-black/90 font-serif italic">
+                <h2 className="title max-lg:text-3xl w-full text-black/90 font-serif italic">
                   A Gallery of Works
                 </h2>
                 <div className="h-px flex-1 bg-gradient-to-r from-transparent via-black/30 to-transparent" />

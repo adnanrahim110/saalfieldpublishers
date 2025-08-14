@@ -7,7 +7,13 @@ import {
 } from "react-icons/io5";
 import { RiPhoneFill } from "react-icons/ri";
 import { Link } from "react-router-dom";
-import { banners_texture, bg_stripe1, bg_stripe2, book } from "../../assets";
+import {
+  banners_texture,
+  bg_stripe1,
+  bg_stripe2,
+  book,
+  logo,
+} from "../../assets";
 import { navigation } from "../../constants";
 
 const Footer = () => {
@@ -23,10 +29,10 @@ const Footer = () => {
           alt=""
         />
         <div className="container">
-          <div className="row justify-between">
+          <div className="row justify-between gap-y-8">
             <div className="lg:w-[23%]">
               <div className="flex flex-col gap-4">
-                <img src="" className="max-w-[180px]" alt="" />
+                <img src={logo} className="max-w-[180px]" alt="" />
                 <p className="text-sm font-medium">
                   Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                   Quaerat voluptatibus dicta voluptas dolorum nesciunt labore!
@@ -34,11 +40,11 @@ const Footer = () => {
               </div>
             </div>
             <div className="lg:w-[17%]">
-              <div className="flex flex-col gap-4">
-                <h5 className="text-primary-800 text-shdow text-2xl">
+              <div className="flex flex-col gap-2 lg:gap-4">
+                <h5 className="text-primary-800 text-shdow text-xl lg:text-2xl">
                   Quick Links
                 </h5>
-                <ul className="flex flex-col gap-2">
+                <ul className="flex flex-col gap-1 lg:gap-2">
                   {navigation
                     .filter((itm) => itm.url !== false)
                     .map((item, idx) => (
@@ -59,11 +65,11 @@ const Footer = () => {
               </div>
             </div>
             <div className="lg:w-[24%]">
-              <div className="flex flex-col gap-4">
-                <h5 className="text-primary-800 text-shdow text-2xl">
+              <div className="flex flex-col gap-2 lg:gap-4">
+                <h5 className="text-primary-800 text-shdow text-xl lg:text-2xl">
                   Our Services
                 </h5>
-                <ul className="flex flex-col gap-2">
+                <ul className="flex flex-col gap-1 lg:gap-2">
                   {navigation[1].dropdown.map((item, idx) => (
                     <li key={idx}>
                       <Link
@@ -83,10 +89,10 @@ const Footer = () => {
             </div>
             <div className="lg:w-4/12">
               <div className="flex flex-col gap-4">
-                <h5 className="text-primary-800 text-shdow text-2xl">
+                <h5 className="text-primary-800 text-shdow text-xl lg:text-2xl">
                   Contact Us
                 </h5>
-                <ul className="flex flex-col gap-4 text-base font-semibold">
+                <ul className="flex flex-col gap-2 lg:gap-4 text-base font-semibold">
                   <li className="inline-block leading-none">
                     <Link className="inline-flex items-center gap-3 group hover:text-primary-700 transition-colors duration-300 ease-in-out">
                       <span className="text-primary-700 text-xl">
@@ -123,13 +129,13 @@ const Footer = () => {
       </div>
       <div className="py-2.5 bg-white relative">
         <div className="container">
-          <div className="flex items-center gap-y-3 text-sm">
-            <p className="flex items-center justify-start lg:mr-7 lg:pr-7 border-r border-neutral-400">
+          <div className="flex flex-col items-center gap-y-2 text-sm">
+            <p className="flex items-center justify-start lg:mr-7 lg:pr-7 lg:border-r border-neutral-400">
               &copy; {new Date().getFullYear()} Your Company{" "}
               <span className="h-px w-5 bg-neutral-400 mx-2" /> All rights
               reserved.
             </p>
-            <ul className="flex items-center">
+            <ul className="flex max-lg:gap-4 items-center">
               <li className="inline-block leading-none">
                 <Link>Privacy Policy</Link>
               </li>
@@ -139,7 +145,11 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-        <img src={book} className="absolute right-5 bottom-1 w-36" alt="" />
+        <img
+          src={book}
+          className="absolute right-5 bottom-1 w-36 max-lg:hidden"
+          alt=""
+        />
       </div>
     </footer>
   );
