@@ -22,11 +22,13 @@ const Process = () => {
                 <div className="lg:w-6/12">
                   <div className="lg:pr-5 space-y-3">
                     <Subtitle>Our Process</Subtitle>
-                    <h2 className="title">How We Work</h2>
+                    <h2 className="title">Our Book Writing Process</h2>
                     <p>
                       Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                       Labore atque ipsam, minus laborum culpa nesciunt accusamus
-                      optio fuga similique. Expedita!
+                      optio fuga similique. Expedita! Lorem ipsum, dolor sit
+                      amet consectetur adipisicing elit. Cupiditate, dolorem!
+                      Lorem ipsum dolor sit amet.
                     </p>
                   </div>
                 </div>
