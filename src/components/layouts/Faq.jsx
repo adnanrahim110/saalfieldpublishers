@@ -44,7 +44,7 @@ const Faq = ({ qouestionare = faqsQuestions }) => {
                         } ${openId !== idx ? "" : ""}`}
                       >
                         <span className="text-sm lg:text-base font-roundkey text-left">
-                          {faq.title}
+                          {faq.qsn || faq.title}
                         </span>
                         <span>
                           <FaAngleDown

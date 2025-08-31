@@ -1,5 +1,6 @@
 import React from "react";
 import { Helmet } from "react-helmet-async";
+import { useParams } from "react-router-dom";
 import BrandsSlider from "../components/layouts/BrandsSlider";
 import CtaSec from "../components/layouts/CtaSec";
 import Faq from "../components/layouts/Faq";
@@ -10,29 +11,44 @@ import ReviewSec from "../components/layouts/ReviewSec";
 import ServiceDetailsSec from "../components/layouts/ServiceDetailsSec";
 import CardSection from "../components/ui/CardSection";
 import Hero from "../components/ui/Hero";
+import { services } from "../constants";
 
 const Service = () => {
+  const { slug } = useParams();
+  const service = services.find((s) => s.url.replace("/", "") === slug);
+
   return (
     <>
       <Helmet>
-        <title>Service - Saalfield Publishers</title>
+        <title>{service.title} - Saalfield Publishers</title>
       </Helmet>
-      <Hero
-        subtitle="Our Services"
-        title="Discover Our Range of Publishing Services"
-        text="At Saalfield Publishers, we offer a comprehensive suite of services to support authors at every stage of the publishing process. From manuscript development to marketing strategy, our team of experts is dedicated to helping you succeed. Whether you're a first-time writer or a seasoned author, we provide personalized guidance and professional resources to bring your vision to life. Our commitment to quality and innovation ensures that your work receives the attention it deserves, from initial concept to final publication and beyond."
-      />
+      {service.hero && (
+        <Hero
+          subtitle={service.title}
+          title={service.hero.title}
+          text={service.hero.text}
+        />
+      )}
       <BrandsSlider />
-      <CardSection
-        title="Our Services"
-        text="Explore the various services we offer to authors, including editing, design, and marketing. Our experienced editors help refine your manuscript, while our creative designers craft visually appealing layouts and covers. We also offer strategic marketing solutions to maximize your book's reach and impact. With Saalfield Publishers, you gain access to a network of industry professionals dedicated to supporting your publishing journey every step of the way."
-      />
-      <ServiceDetailsSec />
+      {service.sec1 && (
+        <CardSection title={service.sec1.title} text={service.sec1.text} />
+      )}
+      {service.sec2 && <ServiceDetailsSec detailedContents={service.sec2} />}
       <Process />
       <PortfolioSec2 />
-      <CtaSec />
-      <ReviewSec />
-      <Faq />
+      {service.sec3 && (
+        <CardSection
+          title={service.sec3.title}
+          text={service.sec3.text}
+          reverse
+        />
+      )}
+      <CtaSec
+        title={service.cta && service.cta.title}
+        text={service.cta && service.cta.text}
+      />
+      <ReviewSec reviews={service.reviews && service.reviews} />
+      <Faq qouestionare={service.faq && service.faq} />
       <Form />
     </>
   );

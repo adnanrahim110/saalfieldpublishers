@@ -129,7 +129,7 @@ const Footer = () => {
       </div>
       <div className="py-2.5 bg-white relative">
         <div className="container">
-          <div className="flex flex-col items-center gap-y-2 text-sm">
+          <div className="flex flex-col lg:flex-row items-center gap-y-2 text-sm">
             <p className="flex items-center justify-start lg:mr-7 lg:pr-7 lg:border-r border-neutral-400">
               &copy; {new Date().getFullYear()} Your Company{" "}
               <span className="h-px w-5 bg-neutral-400 mx-2" /> All rights

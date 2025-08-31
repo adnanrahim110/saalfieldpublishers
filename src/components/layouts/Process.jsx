@@ -19,7 +19,7 @@ const Process = () => {
           <div>
             <div className="container">
               <div className="row justify-between gap-y-10">
-                <div className="lg:w-6/12">
+                <div className="text-center">
                   <div className="lg:pr-5 space-y-3">
                     <Subtitle>Our Process</Subtitle>
                     <h2 className="title">Our Book Writing Process</h2>
@@ -32,22 +32,26 @@ const Process = () => {
                     </p>
                   </div>
                 </div>
-                {processItems.map((item, idx) => (
-                  <div className="lg:w-3/12">
-                    <div
-                      key={idx}
-                      className="flex flex-col gap-5 lg:gap-3 p-14 lg:p-10 relative bg-center bg-no-repeat"
-                      style={{
-                        backgroundImage: `url(${frames_3})`,
-                        backgroundSize: "100% 100%",
-                      }}
-                    >
-                      <img src="" className="size-10" alt="" />
-                      <h4 className="text-2xl font-bold">{item.title}</h4>
-                      <p className="text-base">{item.text}</p>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                  {processItems.map((item, idx) => (
+                    <div key={idx} className="h-full">
+                      <div
+                        key={idx}
+                        className="flex flex-col h-full gap-5 lg:gap-3 p-14 lg:p-10 relative bg-center bg-no-repeat"
+                        style={{
+                          backgroundImage: `url(${frames_3})`,
+                          backgroundSize: "100% 100%",
+                        }}
+                      >
+                        <img src="" className="size-10" alt="" />
+                        <h4 className="text-xl font-source font-bold">
+                          {item.title}
+                        </h4>
+                        <p className="text-base">{item.text}</p>
+                      </div>
                     </div>
-                  </div>
-                ))}
+                  ))}
+                </div>
               </div>
             </div>
           </div>

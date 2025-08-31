@@ -5,6 +5,7 @@ import CtaSec from "../components/layouts/CtaSec";
 import Faq from "../components/layouts/Faq";
 import Form from "../components/layouts/Form";
 import PortfolioSec2 from "../components/layouts/PortfolioSec2";
+import ServicesSec from "../components/layouts/ServicesSec";
 import VisionSec from "../components/layouts/VisionSec";
 import CardSection from "../components/ui/CardSection";
 import Hero from "../components/ui/Hero";
@@ -18,16 +19,17 @@ const About = () => {
       <Hero
         withoutSignup
         subtitle="About Us"
-        title="Learn more about our company"
-        text="Saalfield Publishers has been a leader in the publishing industry for over 100 years. Our commitment to excellence drives us to create innovative and engaging educational materials that support learners of all ages and backgrounds, helping them achieve their fullest potential."
+        title="Ever Wondered Who’s Really Behind The Books You Love?"
+        text="Saalfield Ghostwriting Services isn’t new to the book world, we’re just newly awakened. Decades ago, Saalfield Publishing was a household name, filling bookshelves across America with joyful, imaginative children’s books. From the 1990s to 1970s, we helped kids dream bigger. Then like a favorite storybook gently placed back on the shelf… things went all quiet. <br/>BUT NOW WE’RE BACK… <br/> This time we’re helping you tell your story. We are now offering professional ghostwriting, editing, book publishing and much more to the aspiring authors out there. Each of our services is revamped for today’s digital-first world, but grounded in the same storytelling magic that built our legacy."
       />
       <BrandsSlider />
       <CardSection
         title="Our Mission"
-        text="To provide high-quality educational materials that inspire and engage learners. We strive to empower educators and students by offering resources that foster creativity, curiosity, and lifelong learning in a rapidly changing world. Our mission extends beyond publishing; we aim to build a supportive community where ideas are shared, and innovation is celebrated. Through our dedication to integrity, inclusivity, and excellence, Saalfield Publishers continues to make a positive difference in education, helping individuals unlock their potential and achieve success."
-        subtitle="Empowering Education"
+        text="To help everyday people become published authors by providing expert ghostwriting, editing, publishing, book back cover, book illustration and much more. Cherry on top? You can get it all affordably and with confidentiality."
+        subtitle="Mission"
       />
       <VisionSec />
+      <ServicesSec />
       <PortfolioSec2 />
       <CtaSec />
       <Faq />

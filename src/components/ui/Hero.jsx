@@ -21,7 +21,7 @@ const Hero = ({ title, subtitle, text, withoutSignup = false }) => {
         className={cn(
           "absolute inset-0 mix-blend-multiply",
           withoutSignup
-            ? "bg-gradient-to-t from-black/20 from-0% via-40% to-90% via-black/40 to-black/10"
+            ? "bg-gradient-to-t from-black/90 from-0% via-40% to-90% via-black/40 to-black/40"
             : "bg-gradient-to-r from-primary-900 via-black/40 to-black/40 lg:to-black/20"
         )}
       />
@@ -32,7 +32,7 @@ const Hero = ({ title, subtitle, text, withoutSignup = false }) => {
             withoutSignup ? "justify-center text-center" : "justify-between"
           )}
         >
-          <div className={withoutSignup ? "lg:w-10/12" : "lg:w-[55%]"}>
+          <div className={withoutSignup ? "lg:w-full" : "lg:w-[55%]"}>
             <div className="flex flex-col gap-6">
               <motion.h4
                 initial="hidden"
@@ -51,7 +51,7 @@ const Hero = ({ title, subtitle, text, withoutSignup = false }) => {
                 whileInView="visible"
                 viewport={{ once: true }}
                 variants={fadeInUp({ delay: 0.2 })}
-                className="text-[34px] lg:text-5xl text-white"
+                className="text-[34px] lg:text-4xl text-white"
               >
                 {title}
               </motion.h1>
@@ -61,9 +61,8 @@ const Hero = ({ title, subtitle, text, withoutSignup = false }) => {
                 viewport={{ once: true }}
                 variants={fadeInUp({ delay: 0.4 })}
                 className="text-neutral-200"
-              >
-                {text}
-              </motion.p>
+                dangerouslySetInnerHTML={{ __html: text }}
+              />
               <motion.div
                 initial="hidden"
                 whileInView="visible"

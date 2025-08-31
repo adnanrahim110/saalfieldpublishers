@@ -5,58 +5,7 @@ import "swiper/css/effect-cards";
 import { EffectCreative, Keyboard, Mousewheel } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { banners_reviews_sec } from "../../assets";
-
-const AV1 =
-  "https://img.freepik.com/free-photo/portrait-young-woman-vintage_23-2149645556.jpg";
-const AV2 =
-  "https://img.freepik.com/free-photo/portrait-handsome-man-vintage-style_23-2149645539.jpg";
-const AV3 =
-  "https://img.freepik.com/free-photo/portrait-smiling-african-woman_23-2148898827.jpg";
-const AV4 =
-  "https://img.freepik.com/free-photo/portrait-asian-man-wearing-glasses_23-2148889149.jpg";
-
-const reviews = [
-  {
-    name: "Eleanor Hughes",
-    role: "Author, Historical Fiction",
-    avatar: AV1,
-    quote:
-      "They handled my manuscript like a rare first edition. The typography and paper choice feel museum-grade.",
-    stars: 5,
-  },
-  {
-    name: "Priya Raman",
-    role: "Poet",
-    avatar: AV3,
-    quote:
-      "Editing was precise, kind, and focused on my voice. I finally saw my poems the way I imagined them.",
-    stars: 5,
-  },
-  {
-    name: "Arthur Bell",
-    role: "Memoirist",
-    avatar: AV2,
-    quote:
-      "From cover concept to metadata, they knew exactly what mattered. Distribution was flawless.",
-    stars: 5,
-  },
-  {
-    name: "Kenji Sato",
-    role: "Research Author",
-    avatar: AV4,
-    quote:
-      "Clean layout, impeccable citations, and a cover that reads like a classic. Couldn’t ask for more.",
-    stars: 5,
-  },
-  {
-    name: "Kenji Sato",
-    role: "Research Author",
-    avatar: AV4,
-    quote:
-      "Clean layout, impeccable citations, and a cover that reads like a classic. Couldn’t ask for more.",
-    stars: 5,
-  },
-];
+import { reviewsData } from "../../constants";
 
 const Stars = ({ n = 5 }) => (
   <div className="flex gap-1" aria-label={`${n} out of 5 stars`}>
@@ -73,7 +22,7 @@ const Stars = ({ n = 5 }) => (
   </div>
 );
 
-const TicketCard = ({ quote, name, role, avatar }) => (
+const TicketCard = ({ comment, name, role, avatar }) => (
   <div className="relative mx-auto w-[92%] max-w-[520px] select-none">
     <div className="relative rounded-[28px] bg-[#f6efe4] p-5 ring-1 ring-black/10 shadow-sm transition-all duration-300 will-change-transform group-[.swiper-slide-active]:shadow-[0_0_15px_rgba(0,0,0,0.25)] group-[.swiper-slide-active]:ring-black/20 group-[.swiper-slide-active]:scale-[1.02] group-[.swiper-slide-active]:-translate-y-0.5">
       <div className="pointer-events-none absolute inset-x-8 top-0 h-6 bg-[radial-gradient(circle,_#000_2px,_transparent_2px)] [background-size:16px_16px] [mask-image:linear-gradient(to_bottom,black,transparent)] opacity-15" />
@@ -85,18 +34,15 @@ const TicketCard = ({ quote, name, role, avatar }) => (
         />
         <div className="flex-1">
           <p className="font-serif text-xl text-black/90 italic">{name}</p>
-          <p className="text-xs text-black/60">{role}</p>
+          {role && <p className="text-xs text-black/60">{role}</p>}
         </div>
       </div>
       <blockquote className="mt-4 border-l-4 border-black/20 pl-4 text-[15px] leading-relaxed text-black/80">
-        {quote}
+        {comment}
       </blockquote>
 
       <div className="mt-4 flex items-center justify-between">
         <Stars n={5} />
-        <div className="text-[11px] uppercase tracking-wider text-black/50">
-          Filed review
-        </div>
       </div>
       <div className="absolute -left-3 top-8 h-6 w-6 rounded-full bg-[#e7dccb] ring-1 ring-black/10" />
       <div className="absolute -right-3 bottom-8 h-6 w-6 rounded-full bg-[#e7dccb] ring-1 ring-black/10" />
@@ -104,7 +50,7 @@ const TicketCard = ({ quote, name, role, avatar }) => (
   </div>
 );
 
-const ReviewSec = () => {
+const ReviewSec = ({ reviews = reviewsData }) => {
   return (
     <section
       id="reviews"
@@ -117,7 +63,7 @@ const ReviewSec = () => {
       <div className="container relative">
         <div className="mx-auto max-w-4xl text-center">
           <h2 className="font-serif text-4xl md:text-5xl text-black/90 italic drop-shadow-sm">
-            What Authors Say
+            What Our Clients Have To Say?
           </h2>
           <p className="mx-auto mt-3 max-w-2xl text-black/80">
             Not a carousel of covers. A stack of vintage review tickets you can

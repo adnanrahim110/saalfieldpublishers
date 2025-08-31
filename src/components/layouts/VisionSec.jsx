@@ -1,15 +1,6 @@
 import React from "react";
 import { banners_sec_bg1, bg_stripe2 } from "../../assets";
 
-const BG_PARCHMENT =
-  "https://img.freepik.com/free-photo/old-vintage-paper-background_118047-1097.jpg"; // example
-const IMG_QUILL =
-  "https://img.freepik.com/free-photo/antique-quill-inkwell-old-book_1150-18263.jpg"; // example
-const IMG_PRESS =
-  "https://img.freepik.com/free-photo/vintage-printing-press-workshop_155003-34263.jpg"; // example
-const IMG_LIBRARY =
-  "https://img.freepik.com/free-photo/old-library-with-bookshelves_23-2148898748.jpg"; // example
-
 const VisionSec = () => {
   return (
     <section
@@ -27,11 +18,12 @@ const VisionSec = () => {
             Our Vision
           </h2>
           <p className="mx-auto mt-4 max-w-3xl text-black/80">
-            Honor the craft. Champion authors. Keep the soul of classic
-            publishing alive for a new generation of readers.
+            To become the go-to book creation company in the US where your voice
+            is honored, your style is safe and your dreams of becoming an author
+            becomes a reality.
           </p>
         </div>
-        <div className="mt-14 grid gap-6 md:grid-cols-3">
+        {/* <div className="mt-14 grid gap-6 md:grid-cols-3">
           {[
             {
               title: "Craftsmanship",
@@ -69,37 +61,41 @@ const VisionSec = () => {
               </div>
             </div>
           ))}
-        </div>
+        </div> */}
         <div
           className="mt-16 rounded-2xl bg-white/80 p-6 ring-1 ring-black/10 backdrop-blur bg-no-repeat bg-cover bg-center"
           style={{ backgroundImage: `url(${banners_sec_bg1})` }}
         >
-          <div className="mx-auto max-w-4xl">
+          <div className="ml-auto max-w-[980px]">
+            <h2 className="text-[34px] font-bold font-serif italic text-black">
+              Why Saafield? We’re Not Just Good, We’re Legendary
+            </h2>
+            <p className="my-4 font-medium">
+              Let’s be honest, you’ve got different options when it comes to
+              book writing services. But here’s what makes us different from
+              all:
+            </p>
             <ol className="relative border-l-2 border-black/20 pl-6">
               {[
                 {
-                  year: "Manuscript",
-                  text: "We listen, refine aims, and create a plan that respects your voice.",
+                  text: "We’re not a pop-up agency. Saalfield was once one of the biggest names in US publishing. That reputation? We’re honoring it.",
                 },
                 {
-                  year: "Design",
-                  text: "Typography, layout, and cover come together with care and intent.",
+                  text: "We just don’t write for you, we write with you. Your tone, your message, your vision",
                 },
                 {
-                  year: "Publish",
-                  text: "We prepare print and digital editions with distribution and metadata done right.",
+                  text: "We offer everything under one roof. Writers, editors, illustrators, designers, formatters, marketers, you name it, we’ve got it.",
                 },
                 {
-                  year: "Legacy",
-                  text: "We keep titles discoverable with updates, reprints, and new formats as needed.",
+                  text: "We believe great storytelling should be accessible. So we keep our services high-quality and budget-friendly.",
+                },
+                {
+                  text: "You’re working with native english-speaking experts who understand the US publishing market very well.",
                 },
               ].map((step, i) => (
-                <li key={i} className="mb-8 last:mb-0">
+                <li key={i} className="mb-4 last:mb-0">
                   <span className="absolute -left-[10px] mt-1 h-4 w-4 rounded-full bg-black" />
-                  <h4 className="font-serif text-xl text-black/90 italic">
-                    {step.year}
-                  </h4>
-                  <p className="text-black/70">{step.text}</p>
+                  <p className="text-black/90">{step.text}</p>
                 </li>
               ))}
             </ol>
