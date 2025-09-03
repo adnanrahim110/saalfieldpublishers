@@ -96,8 +96,9 @@ const PortfolioSec2 = () => {
               </div>
 
               <p className="mx-auto max-w-2xl text-black/70 leading-relaxed">
-                Browse a rotating wall of prints. We gave it a vintage studio
-                feel so the art is the point.
+                A quick tour across shelves. Out of wordless memoirs to
+                monstrous fantasy, these projects demonstrate how we make the
+                voice visual. Filter by genre and get the vibe you want.
               </p>
             </div>
           </div>

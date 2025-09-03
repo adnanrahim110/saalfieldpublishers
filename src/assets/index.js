@@ -1,3 +1,14 @@
+export { default as authors_fern } from './images/authors/fern.png';
+export { default as authors_george } from './images/authors/george.jpg';
+export { default as authors_james } from './images/authors/james.jpg';
+export { default as authors_Johanna } from './images/authors/Johanna.jpg';
+export { default as authors_laura } from './images/authors/laura.jpg';
+export { default as authors_louisa } from './images/authors/louisa.jpg';
+export { default as authors_luna } from './images/authors/luna.jpg';
+export { default as authors_mark } from './images/authors/mark.jpg';
+export { default as authors_robert } from './images/authors/robert.jpg';
+export { default as authors_seuss } from './images/authors/seuss.jpg';
+export { default as authors_shirley } from './images/authors/shirley.jpg';
 export { default as awards_axiom } from './images/awards/axiom.webp';
 export { default as awards_finalist } from './images/awards/finalist.webp';
 export { default as awards_global } from './images/awards/global.webp';

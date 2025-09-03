@@ -21,7 +21,7 @@ const CardSection = ({
 }) => {
   return (
     <section
-      className="relative py-20 bg-center bg-cover bg-no-repeat"
+      className="relative py-20 bg-center bg-cover bg-no-repeat max-md:overflow-hidden"
       style={{ backgroundImage: `url(${banners_texture})` }}
     >
       <img

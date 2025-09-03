@@ -74,7 +74,10 @@ const ServiceDetailsSec = ({ detailedContents }) => {
                                 <path d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
                               </svg>
                             </span>
-                            <span className="text-sm text-black/80">{h}</span>
+                            <span
+                              className="text-sm text-black/80"
+                              dangerouslySetInnerHTML={{ __html: h }}
+                            />
                           </li>
                         ))}
                       </ul>
