@@ -43,9 +43,8 @@ const Hero = ({ title, subtitle, text, withoutSignup = false }) => {
                   "text-xl md:text-[26px]",
                   withoutSignup ? "text-primary-300 font-black" : "text-primary"
                 )}
-              >
-                {subtitle}
-              </motion.h4>
+                dangerouslySetInnerHTML={{ __html: subtitle }}
+              />
               <motion.h1
                 initial="hidden"
                 whileInView="visible"

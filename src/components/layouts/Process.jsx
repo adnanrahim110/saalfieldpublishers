@@ -22,13 +22,15 @@ const Process = () => {
                 <div className="text-center">
                   <div className="lg:pr-5 space-y-3">
                     <Subtitle>Our Process</Subtitle>
-                    <h2 className="title">Our Book Writing Process</h2>
+                    <h2 className="title">
+                      Bring Your Story To Life in 4 Simple Steps
+                    </h2>
                     <p>
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                      Labore atque ipsam, minus laborum culpa nesciunt accusamus
-                      optio fuga similique. Expedita! Lorem ipsum, dolor sit
-                      amet consectetur adipisicing elit. Cupiditate, dolorem!
-                      Lorem ipsum dolor sit amet.
+                      We believe in transparency, and ensure that our entire
+                      process is easy and hassle-free for you. Each step of our
+                      process is dealt with utmost professionalism. The best
+                      part? No hidden cost or sudden charges for sure. The steps
+                      are as follows:
                     </p>
                   </div>
                 </div>

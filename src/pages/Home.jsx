@@ -20,20 +20,23 @@ const Home = () => {
         <title>Home - Saalfield Publishers</title>
       </Helmet>
       <Hero
-        subtitle="Lorem ipsum dolor sit"
-        title="Lorem ipsum dolor sit amet consec tetur adipi"
-        text="Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum"
+        subtitle="We've written the stories you love, <br/> without ever taking the spotlight"
+        title="Saalfield Publishing – The Legacy Is Back With The Best Ghostwriting Services in USA"
+        text={`For nearly 8 decades, the name Saalfield Publishing Services, by providing the most fun-filled children’s book, conjured the magic in the minds of children and adults alike. From the dusty shelves of 1900s America to the brightly lit playrooms of the 1970s, we were surely one of the largest creators of children’s books and learning materials in the world. Then, as quickly as a page turned, it all went QUITE.. <br/> UNTIL NOW.. <br/> Saalfield is back with some top-notch book ghostwriting and publishing service to offer across the US. Bigger, bolder and beautifully reimagined for a new generation, while honoring the rich writing, editing and publishing tradition that made us a legend back in the days.`}
       />
       <BrandsSlider />
       <CardSection
-        title="Lorem ipsum dolor sit amet consec tetur adipi"
-        subtitle="Lorem ipsum dolor sit"
-        text="Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum"
+        subtitle="You’re New To Writing. We Are Not"
+        title="Top-Rated Ghostwriters For Hire Perfect For Newly Budding Writers"
+        text="Struggling to write? We’re here to guide you through every stage, writing, editing and preparing your book for publication. Starting your journey as a writer can be tough, especially when your ideas are vivid, the words just won’t come. As a trusted ghostwriting company with deep publishing roots, we offer more than just words on a page. We guide you through every step, beginning from ideation to editing, making the process smooth, professional and most importantly confidential. So, if you’re searching for ghostwriters for hire who truly understand the challenges of first-time authors, you’re just in the right place. Let our book writing professionals handle the structure, language, and storytelling finesse."
       />
       <AuthorsSlider data={authors} />
       <PortfolioSec2 />
       <Awards />
-      <CtaSec />
+      <CtaSec
+        title="Get Top Ghostwriters For Budget-Friendly Book Writing Services Now!"
+        text="We turn your big ideas into bestselling books. Whether you’re a first-time writer or stuck mid-manuscript, Saalfield pairs you with expert storytellers, editors, and publishing consultants to craft, polish and publish your masterpiece. Let’s bring your vision to life professionally and affordably. "
+      />
       <Process />
       <ReviewSec />
       <Faq />

@@ -1,4 +1,4 @@
-import { authors_fern, authors_george, authors_james, authors_Johanna, authors_laura, authors_louisa, authors_luna, authors_mark, authors_robert, authors_seuss, authors_shirley, reviews_m1, reviews_m2, reviews_m3, reviews_w1, reviews_w2, reviews_w3 } from "../assets";
+import { authors_fern, authors_george, authors_james, authors_Johanna, authors_laura, authors_louisa, authors_luna, authors_mark, authors_robert, authors_seuss, authors_shirley, reviews_m1, reviews_m2, reviews_m3, reviews_w1, reviews_w2, reviews_w3, services_aw1, services_aw2, services_aw3, services_aw4, services_bc1, services_bc2, services_bc3, services_bc4, services_be1, services_be2, services_be3, services_bf1, services_bf2, services_bf3, services_bf4, services_bi1, services_bi2, services_bi3, services_bi4, services_bp1, services_bp2, services_bp3, services_gw1, services_gw2, services_gw3, services_pp1, services_pp2, services_pp3 } from "../assets";
 
 export const navigation = [
   {
@@ -60,19 +60,19 @@ export const navigation = [
 export const processItems = [
   {
     title: "Discovery & Consultation",
-    text: "We connect with you to understand your vision, voice and goals, ensuring a personalized writing approach."
+    text: "We begin with understanding your topic and genre. Next, we connect you with a genre-specific expert to understand your vision, voice and goals, ensuring a personalized writing approach."
   },
   {
     title: "Research & Outline Creation",
-    text: "Our experts get deeper into your topic and craft a detailed outline to shape your story’s structure. "
+    text: "Each of our experts get deeper into your topic and craft a detailed outline to shape your story’s structure. We just want to make sure your books are perfect to read for book lovers."
   },
   {
     title: "Write & Collaboration",
-    text: "We write your manuscript with your input, keep you updated through the draft and revisions for perfect alignment "
+    text: "We have an entire ghostwriters squad to write your manuscript with your input, keep you updated through the draft and revisions for perfect alignment"
   },
   {
     title: "Final Review & Delivery ",
-    text: "After thorough editing & polishing, we deliver your finished manuscript ready to publish or share. "
+    text: "After thorough editing & polishing, we deliver your finished manuscript ready to publish or share. Your final approval is crucial before the book is live on the publishing platforms."
   },
 ];
 
@@ -152,19 +152,19 @@ export const servicesSec = [
 
 export const reviewsData = [
   {
-    name: "Jessica Marie Thompson",
+    name: "Lauren Paige",
     avatar: reviews_w2,
-    comment: "Saalfield Ghostwriting Services helped me bring my memoir to life exactly as I imagined it. Their team was professional, patient, and truly understood my story. I couldn’t be happier with the final result."
+    comment: "I’m a first time author and was looking for someone to help me illustrate and publish my children’s book. One of my mentors got his book published from them, so I had to give it a go. I’m truly blown away by their way of tackling every detail that I gave them. Attention-to-detail and immaculate. Loved working with them. 10/10."
   },
   {
-    name: "Daniel Robert Chavez",
+    name: "Mark Benson",
     avatar: reviews_m3,
-    comment: "The cover design and formatting services were top-notch. My book looks amazing both in print and on Kindle. Highly recommend Saalfield for anyone serious about publishing!"
+    comment: "I had 5 manuscripts ready but no idea on how to publish them. I reached out to the Saalfield team and BOOM, my books were formatted just as they should be, with that they also helped me publish it. Their packages are super affordable and I loved that they had no hidden charges. Highly recommended."
   },
   {
-    name: "Olivia Grace Bennett",
+    name: "Austin Mark",
     avatar: reviews_w3,
-    comment: "From start to finish, Saalfield was a dream to work with. They made the ghostwriting process easy and enjoyable, delivering a compelling thriller that exceeded my expectations."
+    comment: "I was looking for ghostwriting services for my fiction book, I just had an idea and wanted someone to help me create a mindblowing crime thriller. The team at Saalfield really were as per my expectations as they came up with spine-chilling twists for my book. I loved working with them. Will surely get in touch with them for my new upcoming book."
   }
 ];
 
@@ -303,6 +303,7 @@ export const services = [
     },
     sec1: {
       title: "Top Tier Ghostwriting Services Without Hefty Price Tags",
+      img: services_gw1,
       text: [
         "At Saalfield Publishing Services, we combine premium quality with budget-friendly pricing to bring your vision of life. As one of the best ghostwriting companies in USA, we’re committed to originality, creativity and client satisfaction. So, whether you’re an aspiring author or an entrepreneur with a story to tell, our expert team has their pens ready to ensure that your manuscript reflects your voice, without compromising on the pricing or the quality."
       ]
@@ -310,6 +311,7 @@ export const services = [
     sec2: [
       {
         title: "Tight Deadlines? We’ve Got Expert Writers You Can Rely On, Even When The Time Is Short",
+        img: services_gw2,
         content: `When the clock is ticking and your book deadline is closing in, you need much more than just a good writer, you need a dedicated, professional team that knows how to deliver fast without compromising on overall quality. At Saalfield Ghostwriting Services, our expert ghostwriters are trained to work efficiently under pressure, turning your ideas into polished manuscripts, onn schedule, every time. <br/> We understand how important timing is, whether you’re trying to meet a publishing window, align with a product launch, or simply want to keep the momentum going. Our team is structured to handle urgent projects with care, focus and the precision only experienced professionals can offer. No missed deadlines. No rushed, subpar work. Just high-quality writing, delivered when you need it. We further have for:`,
         points: [
           "In-house experts working around the clock",
@@ -320,6 +322,7 @@ export const services = [
       },
       {
         title: "Why Saalfield Ghostwriting Stands Out In a Sea Of Sameness",
+        img: services_gw3,
         content: "In a world full of cookie cutter ghostwriting services, we’re not just another name on the list, we're the creative force behind books that actually get finished and truly get read. Choosing us means partnering with a tem that blends authenticity, strategy and soul into every page. So, what makes us stand apart from the crowd:",
         points: [
           "We don’t just written we listen, adapt and capture your voice like it’s our own",
@@ -375,7 +378,85 @@ export const services = [
   },
   {
     title: "Book Editing",
-    url: "/book-editing"
+    url: "/book-editing",
+    hero: {
+      title: "Book Editing That Feels Like A Conversation—And Reads Like A Classic",
+      text: "Words already carry the soul. Editing provides them with pace, poise and sparkle. Editors at Saalfield Publishers pitch rhythm, sharpen logic, and polish words to make the pages slide and ideas fall. After big-picture structure to sentence-level sparkle, the aim is straightforward: To ensure that the book is impossible to put down."
+    },
+    sec1: {
+      title: "Clean, Clear, And So Readable: Editing That Puts Story First",
+      img: services_be1,
+      text: [
+        "The beat of writing is the breath of editing, which keeps it alive. The editorial team of Saalfield forms clarity, voice, and flow, paragraph by paragraph, by chapter, and meaning appears on-the-fly and remains. ",
+        " Anticipate a collegial procedure, realistic feedback, and files that are publication or submission- ready, with none of the enigma and none of the hyperbole."
+      ]
+    },
+    sec2: [
+      {
+        title: "The Unspoken Art of Reading Without Strain.",
+        img: services_be2,
+        text: "The editing is the unseen lift under the language. We structure the work, polish the diction, correct grammar, and prescribe pacing to ensure that the story opens in a flow, arguments are arranged in a logical stack, and each scene or part has its weight.",
+        content: `Manuscripts contain emotion, perception, and aspiration. They are likely to get lost without prudent editing. The editors of Saalfield defend voice and raise clarity, tightening sentences and explaining the context and maintaining the momentum through to the end. <br/> <b>The role of Professional Editors in assisting authors.</b> <br/>`,
+        points: [
+          "Make reading easy. Coherency, rhythmic adjustment, and tonal adjustment convert extended paragraphs into easy-sailing roads to the reader.",
+          "Handle the fussy stuff. Grammar and usage, punctuations, citations, spelling variations and consistency checks- quietly attended to.",
+          "Keep everything coherent. Chapters connect. Arguments build. Characters stay true. The entire book seems to be a single idea.",
+          "Save time and stress. Changes are tracked, a style sheet is delivered, and a clean copy is available, all of which are ready to go to KDP, IngramSpark, agents, or presses."
+        ]
+      },
+    ],
+    sec3: {
+      title: "Book Design Studio Providing Full Solutions to Authors",
+      img: services_be3,
+      text: "A book can not yet be a book until the design of the manuscript makes it readable, arranged, and aesthetically promising. At Saalfield Publishers, your interior design professionals take care of all the details of your interior design- selecting the appropriate typeface and page structure, installing page breaks, and submitting files that are ready to be published to your specifications. Every component, the margins and spacing included, the notes, and references, is perfectly organized in such a way that a reader can easily feel your words."
+    },
+    cta: {
+      title: "Hire the Art Team Your Book Brags About Without Breaking The Bank!",
+      text: "Saalfield Publishers builds a visual bible for your book, then brings it to life. Character turnarounds, page rhythm maps, color story, the whole kit. You get honest timelines, clear notes, and files that pass KDP and Ingram checks without drama."
+    },
+    reviews: [
+      {
+        name: "Marcia Llewellyn",
+        avatar: reviews_w1,
+        comment: "My poems finally breathe. The line edits respected the voice while trimming clutter. The style sheet was gold when I revised."
+      },
+      {
+        name: "David Tran",
+        avatar: reviews_m1,
+        comment: "Dense business chapters became clear, scannable, and human. The editorial letter read like a roadmap. Publishing got simpler."
+      },
+      {
+        name: "Alison Porter",
+        avatar: reviews_w2,
+        comment: "Story beats clicked into place after developmental edits. Pacing is tighter, scenes brighter, and the ending finally lands."
+      }
+    ],
+    faq: [
+      {
+        qsn: "What do you get in a typical edit?",
+        ans: "Depending on the level selected, a clean copy, tracked changes, in-text comments, style sheet, and Editorial Letter (developmental and line) are to be expected. The last error sweep gets added with proofreading."
+      },
+      {
+        qsn: "How long does it take?",
+        ans: "The majority of 50k-90k-word manuscripts can be completed within 2-6 weeks, depending on the complexity and the editing degree. At kickoff, a milestone calendar is given."
+      },
+      {
+        qsn: "Will voice be preserved?",
+        ans: "Yes. Edits indicate, never steamroll. Editors discuss decisions and provide opportunities without changing tone or personality."
+      },
+      {
+        qsn: "Can edits be guided by a style guide?",
+        ans: "Absolutely. Trade books are standardized by Chicago, though one could use APA/MLA or your house guide. A style sheet is a document that records all decisions."
+      },
+      {
+        qsn: "What do I get at the end?",
+        ans: "A Clean Copy, a Style Sheet, Tracked Changes and (where necessary) an Editorial Letter. Optional: proofread-ready PDF, retailer description, keywords and query material."
+      },
+      {
+        qsn: "Do you offer a sample edit?",
+        ans: "Yes. A brief sample is given to give the expectation prior to the entire engagement."
+      },
+    ]
   },
   {
     title: "Book Formatting",
@@ -392,6 +473,7 @@ export const services = [
     },
     sec1: {
       title: "Top Book Formatters in the US for Flawless Publishing Results",
+      img: services_bf1,
       text: [
         "Looking to turn your manuscript into a polished, publish-ready book? Our professional book formatting services make it effortless. At Saalfield, we help the authors to transform their draft into beautifully structured books, whether for print, Kindle, or any other major digital platform. We’re not just about structure, we’re about giving your work the layout it truly deserves.",
         "From indie authors to publishing houses, we’ve helped countless clients with everything from ebook formatting services to precise manuscript formatting to self=publishing. As one of the best ebook formatting companies in the industry, our process ensures your final file meets every technical requirement without compromising on your unique style."
@@ -400,6 +482,7 @@ export const services = [
     sec2: [
       {
         title: "Why We’re One of the Best Book Formatting Companies For Authors Who Want To Stand Out",
+        img: services_bf2,
         content: `When it comes to publishing your book, presentation is everything and that’s where we shine. As a trusted US-based formatting company, we combine industry standard precision with a deep respect for your creative voice. Whether it’s ebook formatting or professional book formatting for print, our expert book formatters ensure every chapter, margin and indent is perfectly placed. We’ve earned our reputation as one of the best book formatting services by delivering a clean, professional layout tailored for Amazon KDP, IngramSpark, Barnes & Noble and beyond. <br/> <strong>Ready to see how a polished format can take your story to the next level?</strong> <br/> Let’s make your book visually unforgettable. With affordable book formatting costs and unmatched attention to detail, we’re the go-to formatting house for authors who want smooth self or traditional book publishing services`,
         points: [
           "Tailored formatting for both print and ebook platforms",
@@ -410,6 +493,7 @@ export const services = [
       },
       {
         title: "Top Reasons Authors Choose Our Professional Book Formatting Services",
+        img: services_bf3,
         content: "It’s not just about formatting, it’s about delivering a seamless publishing experience. We follow an author-first approach to make sure your manuscript turns into a polished, professional book that meets industry standards and reader expectations.",
         points: [
           "Expert book formatters with a sharp eye for detail",
@@ -421,6 +505,7 @@ export const services = [
     ],
     sec3: {
       title: "Work With Top-Tier Book Formatters in the Industry",
+      img: services_bf4,
       text: "Our team of expert book formatters brings precision, consistency and polish to every project. Whether you’re publishing a paperback, hardcover, or eBook. With years of hands-on experience in professional book formatting services, we know how to transform your manuscript into a reader-ready product that meets all industry standards."
     },
     processSec: {
@@ -473,7 +558,84 @@ export const services = [
   },
   {
     title: "Professional Proofreading",
-    url: "/professional-proofreading"
+    url: "/professional-proofreading",
+    hero: {
+      title: "Book Proofreading That Catches The Tiny Things And Saves The Big Day",
+      text: "Words are already at work. Proofreading ensures that nothing catches them off their guard. Proofreaders at Saalfield Publishers plow through typos and punctuation errors, line breaks and text gaps, style discrepancies, and the hidden layout monsters to ensure the book is sharp, reads pure, and professional, cover to colophon."
+    },
+    sec1: {
+      title: "Cool, Clean, Ready to Publish.",
+      img: services_pp1,
+      text: [
+        "The last stage is the polish, and only after the proofreading, a single page is visible to readers, agents, or printers. Spelling, grammar and punctuation, capitalization, numbering, cross reference, page to page visual consistency, saalfield checks, saalfield checks, so that, page after page, the entire book reads like one continuous breath.",
+        "Look forward to workable notes, civil markup, and files that can be submitted to retailers and printers without melodrama."
+      ]
+    },
+    sec2: [
+      {
+        title: "Your Word, Our Editors, One Smooth Surface.",
+        img: services_pp2,
+        content: `The message, story or research remains yours. Proofreading only defends it--making the surface as smooth as possible that readers will not trip and reviewers will never be frowning. <br/> <b>The Assistance of Professional Proofreaders to the Author.</b> <br/> `,
+        points: [
+          "<b>Make reading effortless.</b> The eye glides; nothing snags. Typos, glitches, and distracting inconsistencies are retired.",
+          "<b>Handle the picky bits.</b> Spaces between ellipses, em/en dashes, serial commas, numbers, abbreviations, citation punctuations: purged and regularized.",
+          "<b>Keep the book coherent.</b> Page numbers, headings, figure calls and references are all matchable. TOC and index align.",
+          "Save time at the finish line.</b> Get an approved, marked-up proof and a style sheet, to submit to KDP, IngramSpark, or your press."
+        ]
+      },
+    ],
+    sec3: {
+      title: "A Proofreading Studio With a Full range of formats.",
+      img: services_pp3,
+      text: "A manuscript is really ready when it is linguistically consistent (language is the same), pages are clean, and files act in print and electronic environments. The same deliberate, steady, non-hurly-burly proofreading is applied to trade books, academic titles, memoirs, business books, and illustrated projects by Saalfield."
+    },
+    cta: {
+      title: "Need A Reliable Proofreading Service?",
+      text: "Send the manuscript or page proofs, obtain a brief sample, consult a concise overview, and authorize a plain quotation. Mileposts are anticipated, feedback is understanding and sensible and delivery is punctual."
+    },
+    reviews: [
+      {
+        name: "Arthur Greg",
+        avatar: reviews_m1,
+        comment: "Micro-level care. Typos gone, punctuation consistent, and the page proofs finally looked like a real book. Instant calm."
+      },
+      {
+        name: "Monroe Lincoln",
+        avatar: reviews_m2,
+        comment: "KDP and Ingram accepted on the first upload. TOC alignment and figure calls were spot on. That preflight check saved me hours."
+      },
+      {
+        name: "Cassie Peterson",
+        avatar: reviews_w3,
+        comment: "My illustrated chapters were messy in layout. The typeset proofread fixed breaks, captions, and numbering. Clean pages, happy author."
+      },
+    ],
+    faq: [
+      {
+        qsn: "What’s the difference between proofreading and copyediting?",
+        ans: "Copyediting can adjust sentence structure and flow. Proofreading is the final check for errors and consistency after writing and layout are done. We can scope either, but this service focuses on the last-mile polish."
+      },
+      {
+        qsn: "How long does proofreading take?",
+        ans: "Most 50k–90k word books finish in 5–10 business days, depending on complexity (text-only vs. typeset). A milestone calendar is shared at kickoff."
+      },
+      {
+        qsn: "Do you proof in Word or PDF?",
+        ans: "Both. Manuscripts in Word/Docs get tracked changes. Typeset books get PDF annotations using standard proofmarks."
+      },
+      {
+        qsn: "Can you follow a style guide?",
+        ans: "Yes. Chicago for trade is common, but APA/MLA or a custom house style is fine. We maintain a style sheet for consistency."
+      },
+      {
+        qsn: "Will you change my voice?",
+        ans: "No. Proofreading corrects errors and improves consistency. If we see bigger edits, we’ll flag them rather than rewrite."
+      },
+      {
+        qsn: "Do you offer a sample?",
+        ans: "Yes. A short sample helps align expectations before the full pass."
+      },
+    ]
   },
   {
     title: "Author Website",
@@ -484,6 +646,7 @@ export const services = [
     },
     sec1: {
       title: "Custom Book Illustrations That Captures & Reflects Your Story Through Creative Illustrations",
+      img: services_aw1,
       text: [
         "Looking for a book illustrator who gets your vision to the last detail? At Saalfield Publishers, we understand that illustrations aren’t just pretty pictures, they’re storytelling tools. Whether you’re exploring vintage book illustrations, seeking book cover illustrators for hire or trying to find an illustrator for your book, we match you with the artists that bring both artistic talent and narrative insight. Our team communicates directly with you, making sure your vision never gets lost in translation.",
         "We specialize in everything from classic book illustration for historical fiction to digital artwork for modern genres, offering full compatibility with platforms like Amazon KDP, IngramSpark, Barnes & Nobles and many more. "
@@ -492,6 +655,7 @@ export const services = [
     sec2: [
       {
         title: "Work With Professional Book Illustrators Who Understand The Power Of Visual Storytelling",
+        img: services_aw2,
         text: "At Saalfield Publishers, our book illustrators are visual strategists with deep industry experience. Each illustrator on our team is trained to align art with audience, genre and tone. From bold, modern aesthetic to classic book illustrations, they bring technical precisions and storytelling instincts to every project.",
         content: `<b>Get The Best-In-Class Book Illustrating Services – Every Brushstroke Tells A Story<b/> <br/>  Just as an author brings authenticity to a book, an illustrator brings life to  the story. From initial concept sketches to final approach, we maintain a clear collaborative process that keeps you in control.`,
         points: [
@@ -503,6 +667,7 @@ export const services = [
       },
       {
         title: "Top-Tier Book Illustration Services For Authors Willing To Stand Out",
+        img: services_aw3,
         content: "Illustration is more than art, it’s storytelling in color, texture and expression. At Saalfield Publishers, we bring your narrative to life with illustrations that resonate, capture and stay true to your unique voice. ",
         points: [
           "We create custom illustrations from scratch. No template, no clipart, just pure, original artwork based on your characters, settings and themes.",
@@ -514,6 +679,7 @@ export const services = [
     ],
     sec3: {
       title: "Professional Book Illustrators Who Get Your Vision Like Their Own",
+      img: services_aw4,
       text: "At Saalfield Publishers, we believe illustrations should do more than just decorate a page, they should amplify your message and reflect your story’s heart. Our experienced book illustrators take time to understand your characters, your tone and your audience. Our team leverages classic and modern techniques to deliver vintage book illustrations, dramatic covers or crisp digital spreads, whatever your story calls for."
     },
     cta: {
@@ -569,6 +735,7 @@ export const services = [
     },
     sec1: {
       title: "Best In Class Yet Affordable Book Cover Design Services. Great Books Must Be Slick.",
+      img: services_bc1,
       text: [
         "Writing is the beating heart; design is the pulse readers feel on each page. We design the entire page layout, type stack, grid, margins, spacing, pacing, so the chapters open clean, paragraphs breathe, and images land where they belong.",
         "No more “hope it prints right.” You will receive a style guide, press- ready PDFs, EPUB, and a neat asset pack(retailer thumbnails, mockups, social visuals).No drama, one team, one time schedule, one page that reads like second nature."
@@ -577,6 +744,7 @@ export const services = [
     sec2: [
       {
         title: "Your Words and Our Book Cover Designers – The Ultimate Winning Duo! A Perfect Fit",
+        img: services_bc2,
         text: "A manuscript can hold a thousand emotions, but without the right design it risks feeling unfinished. That’s where our book design team steps in. We shape your interior layout with precision—fonts chosen for readability, spacing that makes each page breathe, and grids that keep everything consistent. Every page is designed to look elegant while staying invisible enough to let your story shine.",
         content: `<b>How Do Professional Book Designers Help Authors?</b> <br/>`,
         points: [
@@ -588,6 +756,7 @@ export const services = [
       },
       {
         title: "Reasons Why Saalfield is the Book Designer of Choice.",
+        img: services_bc3,
         points: [
           `<b>Book design narrates silently.</b><br/> In Saalfield, our designers make interiors that allow the words to shine and the reading process to be smooth and polished.`,
           `<b>We listen first.</b><br/> We discuss with you your vision, genre, and audience before we begin to set type. We look up sources, develop objectives and draw a design plan that suits the tone of your manuscript.`,
@@ -599,6 +768,7 @@ export const services = [
     ],
     sec3: {
       title: "Book Design Studio Offering Complete Solutions for Authors",
+      img: services_bc4,
       text: "A manuscript only becomes a book when the design makes it readable, organized, and visually inviting. At Saalfield Publishers, our design specialists handle every aspect of your interior layout—from choosing the right typeface and setting up page grids to delivering production-ready files that meet publishing standards. Each element, from margins and spacing to headers, notes, and references, is carefully structured so that readers experience your words with ease."
     },
     cta: {
@@ -650,6 +820,7 @@ export const services = [
     },
     sec1: {
       title: "Our Creative Team Of Experts Believe That Great Stories Are Worth Great Art.",
+      img: services_bi1,
       text: [
         "Step one is writing; now you need illustrations that slap, evoke imagination, and remain with readers even after the final page has been read. Crafted by Saalfield artists: bespoke art that fits your personality and your target multi-generational gems and kid spreads, informational detail, or custom covers that captivate attention.",
         "Enough of endless searches like book illustrations near me. You have discovered a team that will produce high-quality printable art without the inconvenience."
@@ -658,6 +829,7 @@ export const services = [
     sec2: [
       {
         title: "Your Story, Our Illustrators – Just A Perfect Visual Match For You",
+        img: services_bi2,
         text: "Great art is more than a decorative page. It leads sight, carries feeling, and helps inviting readers to remain somewhat longer. In Saalfield Publishers, you are collaborating with illustrators and art directors in creating a look that is true to your voice. You receive updates in the first sketch to the last print files, painless revisions and a work of art that turns heads on every shelf and on every screen.",
         content: `<b>How Do Book Illustration Teams Help Authors Professionally?</b>`,
         points: [
@@ -671,6 +843,7 @@ export const services = [
       },
       {
         title: "Why Authors Stick With Saalfield For Their Book Art",
+        img: services_bi3,
         content: `Let’s keep it real. Prefer pictures that are authentic to your narrative and resonate with readers? That is what we do--all the way through.`,
         points: [
           `<b>We listen first.</b><br/> We will discuss briefly, look up your references, and pin down your objectives. Then we will put in a small trial frame to give you the vibe before we jump in.`,
@@ -683,6 +856,7 @@ export const services = [
     ],
     sec3: {
       title: "Book Illustration Studio With End-to-End Solutions for Authors",
+      img: services_bi4,
       text: "Your narrative requires artwork that carries the heavy work. Saalfield Publishers collaborates with illustrators and book designers to manage all the way to the first concept to print-ready files. We strategize the appearance, plot the pages, create the characters, and produce pristine art that sails through KDP and IngramSpark submissions with no hassle. Clear timelines, fair pricing, friendly updates. Zero drama."
     },
     cta: {
@@ -734,6 +908,7 @@ export const services = [
     },
     sec1: {
       title: "Professional Book Publishing Services in the US – Tailored For New & Experienced Authors",
+      img: services_bp1,
       text: [
         "Dreaming of seeing your name on the spine of a professionally published book? At Saalfield, we offer top-tier book publishing services that bridge creativity with strategy, right perfectly. So, if you’re looking for the top ten publishing companies or seeking self-publishing companies that offer transparency and support, our experienced team walks you through every step, from manuscript submission to global distribution.",
         "We collaborate with publishers for new authors, indie writers and seasoned pros  o provide the best in both ebook publishing services and on demand self demanding publishing,"
@@ -742,6 +917,7 @@ export const services = [
     sec2: [
       {
         title: "Most Trusted & One Of The Best Book Publishing Companies in the US",
+        img: services_bp2,
         text: "At Saalfield, we combine industry expertise with personalized support to stand out as a top book publishing company for new and established authors alike. Now the question here is what makes us different? It’s our blend of professional precision, transparent processes and genuine care for our journey. ",
         content: `<b>Looking for a publishing team that actually listens, supports and delivers?</b> <br/>  Let’s make your publishing journey seamless and stress-free. Our work spans both traditional and self-publishing paths, giving you access to some of the top publishing companies while maintaining creative control. As a leading book service company in the US we’re proud to help the authors globally in publishing their books regardless of the niche. Here’s what we do for you altogether:`,
         points: [
@@ -754,6 +930,7 @@ export const services = [
     ],
     sec3: {
       title: "Affordable Book Publishing Services That Gets Your Book Seen & Sold",
+      img: services_bp3,
       text: "Every author dreams of seeing their books in the reader's hands and we make that dream achievable without the hefty price tag. With Saalfield, you get expert guidance, professional resources and affordable options designed to launch your manuscript successfully and confidently. So, partner with Saalfield for budget-friendly publishing solutions that don’t compromise on the quality."
     },
     cta: {

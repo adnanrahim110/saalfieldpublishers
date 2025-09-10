@@ -90,15 +90,15 @@ const PortfolioSec2 = () => {
               <div className="mx-auto flex w-full lg:max-w-3xl items-center gap-4">
                 <div className="h-px flex-1 bg-gradient-to-r from-transparent via-black/30 to-transparent" />
                 <h2 className="title max-lg:text-3xl w-full text-black/90 font-serif italic">
-                  A Gallery of Works
+                  We Proudly Showcase Our Published Work
                 </h2>
                 <div className="h-px flex-1 bg-gradient-to-r from-transparent via-black/30 to-transparent" />
               </div>
 
               <p className="mx-auto max-w-2xl text-black/70 leading-relaxed">
-                A quick tour across shelves. Out of wordless memoirs to
-                monstrous fantasy, these projects demonstrate how we make the
-                voice visual. Filter by genre and get the vibe you want.
+                Want to catch a quick glimpse of our successfully published
+                books? Go through them with ease and get a chance to decide for
+                yourself.
               </p>
             </div>
           </div>

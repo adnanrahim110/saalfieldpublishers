@@ -31,7 +31,11 @@ const Service = () => {
       )}
       <BrandsSlider />
       {service.sec1 && (
-        <CardSection title={service.sec1.title} text={service.sec1.text} />
+        <CardSection
+          title={service.sec1.title}
+          text={service.sec1.text}
+          img={service.sec1.img}
+        />
       )}
       {service.sec2 && <ServiceDetailsSec detailedContents={service.sec2} />}
       <Process />
@@ -40,6 +44,7 @@ const Service = () => {
         <CardSection
           title={service.sec3.title}
           text={service.sec3.text}
+          img={service.sec3.img}
           reverse
         />
       )}

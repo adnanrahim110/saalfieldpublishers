@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { banners_service_sec, srv_img } from "../../assets";
 import { cn } from "../../utils/cn";
-const IMG_SERVICE = srv_img;
 
 const ServiceDetailsSec = ({ detailedContents }) => {
   return (
@@ -38,7 +37,7 @@ const ServiceDetailsSec = ({ detailedContents }) => {
                   >
                     <div className="relative h-full overflow-hidden rounded-2xl ring-1 ring-black/10 shadow-xl">
                       <img
-                        src={IMG_SERVICE}
+                        src={detailedContent.img}
                         alt="Service preview"
                         className="size-full object-cover object-center grayscale-[15%] sepia-[12%] contrast-110"
                       />
