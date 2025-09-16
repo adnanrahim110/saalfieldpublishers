@@ -13,6 +13,7 @@ import {
   portfolio_6,
   portfolio_7,
   portfolio_8,
+  portfolio_9,
 } from "../../assets";
 import Subtitle from "../ui/Subtitle";
 
@@ -25,6 +26,7 @@ const portfolioImages = [
   portfolio_6,
   portfolio_7,
   portfolio_8,
+  portfolio_9,
 ];
 
 const PortfolioSec = () => {
@@ -38,7 +40,7 @@ const PortfolioSec = () => {
     >
       <div className="container">
         <div className="row justify-center gap-y-5">
-          <div className="lg:w-10/12 text-center">
+          <div className="lg:w-8/12 text-center">
             <div className="space-y-4">
               <Subtitle
                 frameClass="brightness-[200%]"
@@ -47,13 +49,12 @@ const PortfolioSec = () => {
                 Our Portfolio
               </Subtitle>
               <h2 className="title text-black">
-                Explore our diverse range of publications
+                We Proudly Showcase Our Published Work
               </h2>
               <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Voluptatum eum veniam quae optio consectetur corporis dolores
-                nisi provident, distinctio nulla porro accusamus eius.
-                Architecto, repellendus!
+                Want to catch a quick glimpse of our successfully published
+                books? Go through them with ease and get a chance to decide for
+                yourself.
               </p>
             </div>
           </div>
@@ -63,12 +64,20 @@ const PortfolioSec = () => {
               loop
               autoplay={{ delay: 2500, disableOnInteraction: false }}
               speed={1500}
-              slidesPerView={5}
-              spaceBetween={40}
-              className="px-10"
+              slidesPerView={7}
+              breakpoints={{
+                0: { slidesPerView: 2, spaceBetween: 0, slidesPerGroup: 1 },
+                480: { slidesPerView: 3, spaceBetween: 0, slidesPerGroup: 1 },
+                640: { slidesPerView: 4, spaceBetween: 0, slidesPerGroup: 1 },
+                768: { slidesPerView: 5, spaceBetween: 0, slidesPerGroup: 1 },
+                1024: { slidesPerView: 6, spaceBetween: 0, slidesPerGroup: 1 },
+                1280: { slidesPerView: 7, spaceBetween: 0, slidesPerGroup: 1 },
+              }}
+              spaceBetween={0}
+              className="px-10 *:items-center"
             >
               {portfolioImages.map((image, idx) => (
-                <SwiperSlide key={idx} className="my-5">
+                <SwiperSlide key={idx} className="my-5 px-4">
                   <img
                     src={image}
                     alt={`Portfolio ${idx + 1}`}

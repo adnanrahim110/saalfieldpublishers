@@ -6,6 +6,7 @@ import BrandsSlider from "../components/layouts/BrandsSlider";
 import CtaSec from "../components/layouts/CtaSec";
 import Faq from "../components/layouts/Faq";
 import Form from "../components/layouts/Form";
+import PortfolioSec from "../components/layouts/PortfolioSec";
 import PortfolioSec2 from "../components/layouts/PortfolioSec2";
 import Process from "../components/layouts/Process";
 import ReviewSec from "../components/layouts/ReviewSec";
@@ -31,7 +32,7 @@ const Home = () => {
         text="Struggling to write? We’re here to guide you through every stage, writing, editing and preparing your book for publication. Starting your journey as a writer can be tough, especially when your ideas are vivid, the words just won’t come. As a trusted ghostwriting company with deep publishing roots, we offer more than just words on a page. We guide you through every step, beginning from ideation to editing, making the process smooth, professional and most importantly confidential. So, if you’re searching for ghostwriters for hire who truly understand the challenges of first-time authors, you’re just in the right place. Let our book writing professionals handle the structure, language, and storytelling finesse."
       />
       <AuthorsSlider data={authors} />
-      <PortfolioSec2 />
+      <PortfolioSec />
       <Awards />
       <CtaSec
         title="Get Top Ghostwriters For Budget-Friendly Book Writing Services Now!"

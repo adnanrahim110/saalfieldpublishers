@@ -333,8 +333,8 @@ export const services = [
       }
     ],
     cta: {
-      title: "Ready To Collaborate With The Best Book Illustrators With Stunning Artwork?",
-      text: "Let’s work together to bring your world to life visually. When you get your book illustrations done by a seasoned team like ours, you’re not just hiring illustrators, you’re hiring creative heads for maximum results. So, are you ready to get started right away with us?"
+      title: "Get Top Ghostwriters For Budget-Friendly Book Writing Services Now!",
+      text: "We turn your big ideas into bestselling books. Whether you’re a first-time writer or stuck mid-manuscript, Saalfield pairs you with expert storytellers, editors, and publishing consultants to craft, polish and publish your masterpiece. Let’s make your book a hit professionally and affordably."
     },
     reviews: [
       {
@@ -380,7 +380,7 @@ export const services = [
     title: "Book Editing",
     url: "/book-editing",
     hero: {
-      title: "Book Editing That Feels Like A Conversation—And Reads Like A Classic",
+      title: "Book Editing That Feels Like A Conversation And Reads Like A Classic",
       text: "Words already carry the soul. Editing provides them with pace, poise and sparkle. Editors at Saalfield Publishers pitch rhythm, sharpen logic, and polish words to make the pages slide and ideas fall. After big-picture structure to sentence-level sparkle, the aim is straightforward: To ensure that the book is impossible to put down."
     },
     sec1: {
@@ -860,8 +860,8 @@ export const services = [
       text: "Your narrative requires artwork that carries the heavy work. Saalfield Publishers collaborates with illustrators and book designers to manage all the way to the first concept to print-ready files. We strategize the appearance, plot the pages, create the characters, and produce pristine art that sails through KDP and IngramSpark submissions with no hassle. Clear timelines, fair pricing, friendly updates. Zero drama."
     },
     cta: {
-      title: "Hire the Art Team Your Book Brags About",
-      text: "Saalfield Publishers builds a visual bible for your book, then brings it to life. Character turnarounds, page rhythm maps, color story, the whole kit. You get honest timelines, clear notes, and files that pass KDP and Ingram checks without drama."
+      title: "Ready To Colaborate With The Best Book Illustrators With Stunning Artwork?",
+      text: "Let's work together to bring your world to life visually. When you get your book illustrations done by a seasoned team like ours, you’re not just hiring illustrators, you’re hiring creative heads for maximum results. So, are you ready to get started right away with us?"
     },
     reviews: [
       {
