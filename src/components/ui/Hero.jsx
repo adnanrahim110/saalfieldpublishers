@@ -50,7 +50,7 @@ const Hero = ({ title, subtitle, text, withoutSignup = false }) => {
                 whileInView="visible"
                 viewport={{ once: true }}
                 variants={fadeInUp({ delay: 0.2 })}
-                className="text-[34px] lg:text-4xl text-white"
+                className="text-[30px] lg:text-4xl text-white"
               >
                 {title}
               </motion.h1>

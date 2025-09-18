@@ -5,6 +5,7 @@ import BrandsSlider from "../components/layouts/BrandsSlider";
 import CtaSec from "../components/layouts/CtaSec";
 import Faq from "../components/layouts/Faq";
 import Form from "../components/layouts/Form";
+import PortfolioSec from "../components/layouts/PortfolioSec";
 import PortfolioSec2 from "../components/layouts/PortfolioSec2";
 import Process from "../components/layouts/Process";
 import ReviewSec from "../components/layouts/ReviewSec";
@@ -39,7 +40,7 @@ const Service = () => {
       )}
       {service.sec2 && <ServiceDetailsSec detailedContents={service.sec2} />}
       <Process />
-      <PortfolioSec2 />
+      <PortfolioSec />
       {service.sec3 && (
         <CardSection
           title={service.sec3.title}

@@ -53,7 +53,7 @@ const ServiceDetailsSec = ({ detailedContents }) => {
                   >
                     <div className="rounded-2xl bg-white/85 p-6 ring-1 ring-black/10 backdrop-blur">
                       <p
-                        className="text-black/80"
+                        className="text-black/80 serv_det"
                         dangerouslySetInnerHTML={{
                           __html: detailedContent.content,
                         }}

@@ -23,7 +23,7 @@ const Home = () => {
       <Hero
         subtitle="We've written the stories you love, <br/> without ever taking the spotlight"
         title="Saalfield Publishing – The Legacy Is Back With The Best Ghostwriting Services in USA"
-        text={`For nearly 8 decades, the name Saalfield Publishing Services, by providing the most fun-filled children’s book, conjured the magic in the minds of children and adults alike. From the dusty shelves of 1900s America to the brightly lit playrooms of the 1970s, we were surely one of the largest creators of children’s books and learning materials in the world. Then, as quickly as a page turned, it all went QUITE.. <br/> UNTIL NOW.. <br/> Saalfield is back with some top-notch book ghostwriting and publishing service to offer across the US. Bigger, bolder and beautifully reimagined for a new generation, while honoring the rich writing, editing and publishing tradition that made us a legend back in the days.`}
+        text={`For nearly 8 decades, the name Saalfield Publishing Services, by providing the most fun-filled children’s book, conjured the magic in the minds of children and adults alike. From the dusty shelves of 1900s America to the brightly lit playrooms of the 1970s, we were surely one of the largest creators of children’s books and learning materials in the world. Then, as quickly as a page turned, it all went QUITE.. <br/><br/> UNTIL NOW.. <br/><br/> Saalfield is back with some top-notch book ghostwriting and publishing service to offer across the US. Bigger, bolder and beautifully reimagined for a new generation, while honoring the rich writing, editing and publishing tradition that made us a legend back in the days.`}
       />
       <BrandsSlider />
       <CardSection

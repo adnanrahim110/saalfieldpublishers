@@ -62,7 +62,7 @@ const ReviewSec = ({ reviews = reviewsData }) => {
     >
       <div className="container relative">
         <div className="mx-auto max-w-4xl text-center">
-          <h2 className="font-serif text-4xl md:text-5xl text-black/90 italic drop-shadow-sm">
+          <h2 className="font-serif text-2xl md:text-5xl text-black/90 italic drop-shadow-sm">
             What Our Clients Have To Say?
           </h2>
           <p className="mx-auto mt-3 max-w-2xl text-black/80">

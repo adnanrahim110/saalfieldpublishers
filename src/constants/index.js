@@ -625,7 +625,7 @@ export const services = [
       },
       {
         qsn: "Can you follow a style guide?",
-        ans: "Yes. Chicago for trade is common, but APA/MLA or a custom house style is fine. We maintain a style sheet for consistency."
+        ans: "Yes. Chicago for traditional is common, but APA/MLA or a custom house style is fine. We maintain a style sheet for consistency."
       },
       {
         qsn: "Will you change my voice?",
@@ -769,7 +769,7 @@ export const services = [
     sec3: {
       title: "Book Design Studio Offering Complete Solutions for Authors",
       img: services_bc4,
-      text: "A manuscript only becomes a book when the design makes it readable, organized, and visually inviting. At Saalfield Publishers, our design specialists handle every aspect of your interior layout—from choosing the right typeface and setting up page grids to delivering production-ready files that meet publishing standards. Each element, from margins and spacing to headers, notes, and references, is carefully structured so that readers experience your words with ease."
+      text: "At Saalfield Publishers, our design specialists handle every aspect of your interior layout, from choosing the right typeface and setting up page grids to delivering production-ready files that meet publishing standards."
     },
     cta: {
       title: "Hire the Art Team Your Book Brags About Without Breaking The Bank!",
